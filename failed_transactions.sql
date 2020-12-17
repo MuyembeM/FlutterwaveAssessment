@@ -1,0 +1,1 @@
+SELECT merchantid, `status`, chargemessage, createddate, count(id) as numtransactions FROM flutterwave_assessments.transaction_table where createddate >= '2020-10-01' and `status` = 'failed' group by merchantid, status, chargemessage, createddate;
