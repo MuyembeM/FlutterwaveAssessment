@@ -5,7 +5,7 @@
     date_default_timezone_set('Africa/Lusaka');
 
     // reset session variable
-    $_SESSION['poll'] = null;
+    //$_SESSION['poll'] = null;
     
     try{
         // Query Flutterwave account for transfer id
