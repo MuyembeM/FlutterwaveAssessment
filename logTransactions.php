@@ -1,4 +1,5 @@
 <?php
+    require_once 'connection.php';
     try{
         // get transactions from flutterwave using curl
         $url = 'https://api.flutterwave.com/v3/transactions';
@@ -17,7 +18,7 @@
             CURLOPT_CUSTOMREQUEST => "GET",
             CURLOPT_HTTPHEADER => array(
                 "Content-Type: application/json",
-                "Authorization: Bearer FLWSECK_TEST-096df3a0517dfbc63f167c0bc2e782c7-X",
+                "Authorization: Bearer FLWSECK_TEST-XXXXXXXXXXXXXXXXXXXXXXXXXXXXXX-X",
             ),
         ));
 
@@ -85,19 +86,6 @@
                             }
                         }
                     }
-                    // connect to database
-                    mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
-
-                    $host = 'localhost';
-                    $user = 'root';
-                    $db = 'flutterwave_assessments';
-                    $password = '';
-
-                    $conn = new mysqli($host,$user,$password);
-                    mysqli_select_db($conn,$db);
-
-                    $conn = new mysqli($host,$user,$password);
-                    mysqli_select_db($conn,$db);
 
                     // log transaction
                     try{
