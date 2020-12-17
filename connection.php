@@ -1,10 +1,10 @@
 <?php
     mysqli_report(MYSQLI_REPORT_ERROR | MYSQLI_REPORT_STRICT);
 
-    $host = 'localhost';
-    $user = 'root';
+    $host = 'xxxxxxxxxx';
+    $user = 'xxxxxx';
     $db = 'flutterwave_assessments';
-    $password = '';
+    $password = 'xxxxxxxxxxxxxx';
 
     $conn = new mysqli($host,$user,$password);
     mysqli_select_db($conn,$db);
