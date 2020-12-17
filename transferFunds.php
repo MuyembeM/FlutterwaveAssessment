@@ -35,7 +35,7 @@
             }",
             CURLOPT_HTTPHEADER => array(
                 "Content-Type: application/json",
-                "Authorization: Bearer FLWSECK_TEST-096df3a0517dfbc63f167c0bc2e782c7-X",
+                "Authorization: Bearer FLWSECK_TEST-XXXXXXXXXXXXXXXXXXXX-X",
             ),
         ));
 
